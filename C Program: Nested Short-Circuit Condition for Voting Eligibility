@@ -1,0 +1,46 @@
+### C Program: Nested Short-Circuit Condition for Voting Eligibility
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int age;
+    char citizen;
+
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    printf("Are you an Indian citizen? (Y/N): ");
+    scanf(" %c", &citizen);
+
+    if (age >= 18 && (citizen == 'Y' || citizen == 'y'))
+    {
+        printf("You are eligible to vote in India.\n");
+    }
+    else
+    {
+        printf("You are not eligible to vote in India.\n");
+    }
+
+    return 0;
+}
+```
+
+### Sample Output
+
+```text
+Enter your age: 18
+Are you an Indian citizen? (Y/N): Y
+
+You are eligible to vote in India.
+```
+
+### How it works
+
+* `age >= 18` → checks whether the person has completed 18 years.
+* `citizen == 'Y' || citizen == 'y'` → checks whether the person is an Indian citizen.
+* `&&` → **both conditions must be true**.
+* `||` → either `Y` or `y` is accepted.
+
+So, **18 or above + Indian citizen = eligible to vote**.
