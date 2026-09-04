@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+int a=44;
+int b=22;
+  float result1=(float)a;
+   printf("%f", result1);
+  int result2=(int)result1;
+
+    return 0;
+}
