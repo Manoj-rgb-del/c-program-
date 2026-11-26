@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, sum;
+
+    cout << "Enter any two numbers: ";
+    cin >> a >> b;
+
+    sum = a + b;
+
+    cout << "sum = " << sum << "\n";
+
+    return 0;
+}
